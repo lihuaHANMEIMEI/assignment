@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Halant&family=Italianno&display=swap');
+h1{
+    font-family: Bellefair;
+    font-size: 100px;
+}
+body{
+    font-family: Halant;
+}
+.menu{
+    background-color: rgba(8, 8, 8, 0.564);
+  
+}
+.jumbotron{
+    background-image: url('../images/background.JPG');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.nav-link.active{
+    background-color: black !important;
+}
+.intro{
+    background-color: rgba(0, 0, 0, 0.441)  !important;
+    font-family: Bellefair;
+}
+#footer {
+    font-family: Italianno;
+    padding-bottom: 0;
+    margin-top: 200px;
+}
+a{
+    text-decoration: none !important;
+    color: rgba(0, 0, 0, 0.737);
+}
+a:hover{
+    color: black;
+}
+#album{
+    margin-top:200px !important;
+}
