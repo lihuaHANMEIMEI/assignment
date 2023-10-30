@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Zeyada&display=swap');
+*{
+  font-family: 'Special Elite';
+}
+h1{
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 100px;
+    background: linear-gradient(to right, #ffffff 50%, #000000 50%); /* 使用线性渐变背景 */
+    background-clip:text;
+    -webkit-background-clip: text; /*将背景剪切到文字内部*/
+   
+     color: transparent; /* 使文字颜色透明 */
+}
+
+.text{
+  text-shadow: 2px 2px 5px rgba(97, 23, 23, 0.678);
+}
+h2{
+  font-family: 'Caveat', cursi/*  */ve;
+  font-size: 5vw;
+  padding-bottom: 4vw;
+}
+header{
+    background-image:url('../images/Header_imag.jpg');
+    background-position: left top;
+    background-size:  50% 100%; 
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+.grow_shadow a{
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0,0,0,0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow,transform;
+  transition-property: box-shadow,transform;
+}
+.grow_shadow a:hover,.grow_shadow a:focus,.grow_shadow a active{
+  box-shadow: 0 10px 10px -10px rgba(0,0,0,0.5);
+  -webkit-transform:scale(1.1);
+  transform: scale(1.1);
+}
+#menu{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image:linear-gradient(90deg, rgba(252,252,252,1) 47%, rgba(130,116,116,1) 76%, rgba(1, 0, 7, 0.842) 100%);
+    border: #000000;
+    border-radius: 15px;
+    position: relative;
+  }
+  #menu li {
+    float: right;
+  }
+  
+  #menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  #menu li a:hover{
+    background-color: #000000;
+  }
+  
+  section {
+    display: flex;
+    justify-content: space-between;
+    align-items:stretch;
+    margin-bottom: 20%;
+    margin-top: 10%;
+  }
+
+  .text {
+    flex:1;
+    box-sizing: border-box;
+    padding: 0px;
+    margin-left:5%;
+    margin-right: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 2;
+  }
+  .text h2{
+    text-align: center;
+  } 
+  .text ul{
+    list-style-type:none;
+    text-align: center;
+  }
+  .text a{
+    text-decoration: none;
+  }
+
+  .pics{
+    flex: 1;
+    position: relative;
+    margin-right: 4%;
+  }
+  .pics img{
+    display: block;
+    width:100%;
+    height: 100%;
+    filter: grayscale(100%);
+    opacity: 1;
+  }
+ .overlay{
+  position:absolute;
+  bottom: 100%;
+  left:0;
+  right:0;
+  background-color: rgba(61, 60, 60, 0.479);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition:.5s ease;
+ }
+ .pics:hover .overlay{
+  bottom:0;
+  height:100%;
+ }
+
+ .description{ 
+  color:#ffffff;
+  font-size:17px;
+  position: absolute;
+  overflow: hidden;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50% ,50%);
+  text-shadow: 2px 2px 5px rgba(97, 23, 23, 0.678);
+  line-height: 1.5;
+ }
+#Skills{
+  box-sizing: border-box;
+}
+#Skills h2{
+  margin-top: 10%;
+  font-size:70px;
+  margin-left: 3%;
+  text-shadow: 2px 2px 5px rgba(97, 23, 23, 0.678);
+}
+
+.skill_gallery {
+  float: left;
+  width: 30%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.skill_gallery img {
+  display: block;
+  width: 100%;
+  filter: grayscale(100%);
+  z-index: -1;
+}
+
+.skill_gallery .description {
+  color: #070000;
+  position: relative;
+  text-align:center;
+  font-size: 17px;
+  padding: 3px;
+  top:76px;
+
+}
+
+
+
+  footer{ 
+    background-image: url(../images/background.png);
+    background-size: 90px 90px;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size:15px;
+    color:#251818;
+    text-align: center;
+  }
+  footer a{
+    position: relative;
+    text-decoration: none; 
+    color:rgb(71, 12, 12);
+    overflow: hidden;
+  }
+  footer a::after{
+    content: "";
+    position:absolute;
+    width: 0;  /*初始没有下划线，下划线宽度为0*/
+    height: 2px; /*下划线的厚度*/
+    background-color: rgba(122, 25, 25, 0.694); /*下划线用background color来定义颜色*/
+    transition: width 0.3s ease-in-out;
+    bottom: -2px;
+    left:50%;
+    transform: translateX(-50%);
+}
+a:hover{
+    cursor:pointer;
+    color: rgba(128, 25, 25, 0.694);
+}
+a:hover::after{
+    width: 100%;
+}
+ 
