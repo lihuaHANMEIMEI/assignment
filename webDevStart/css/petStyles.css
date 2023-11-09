@@ -1,0 +1,33 @@
+header{
+    background-image: url(../images/pets.jpg);
+    background-size: cover;
+    height: 80vh;
+    background-position: center;   
+}
+#servicesheader{
+    background-image: url(../images/services.jpg) ;
+}
+.bg-pink{
+    background-color: rgb(117, 24, 24);
+}
+.nav-link{
+    color: rgb(240, 227, 212) !important;
+}
+.circle{
+    background-color: black;
+    border-radius: 60% 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.bg-black{
+    background-color: black !important;
+}
+footer a{
+    text-decoration: none;
+    color: aliceblue;
+}
+footer a:hover{
+    color:brown;
+}
